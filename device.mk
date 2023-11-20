@@ -6,10 +6,6 @@
 # Do not include ROM side face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
-# Face unlock
-PRODUCT_PACKAGES += \
-    SettingsGoogleFutureFaceEnroll
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/google/faceunlock/overlay
 

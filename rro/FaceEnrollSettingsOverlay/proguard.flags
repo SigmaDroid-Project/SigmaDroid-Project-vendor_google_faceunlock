@@ -9,8 +9,8 @@
 -keep class com.android.wsuinterface.** { *; }
 
 # For reflection
--keepattributes InnerClasses
--keep class **.R
--keep class **.R$* {
-    <fields>;
-}
+#-keepattributes InnerClasses
+#-keep class **.R
+#-keep class **.R$* {
+#    <fields>;
+#}
