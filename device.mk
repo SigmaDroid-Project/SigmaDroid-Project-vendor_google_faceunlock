@@ -6,10 +6,6 @@
 # Do not include ROM side face unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
 
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED), false)
-    $(warning 'TARGET_FACE_UNLOCK_SUPPORTED is set to false, overriding ROM side face unlock with Google Face Unlock')
-endif
-
 # Face unlock
 PRODUCT_PACKAGES += \
     SettingsGoogleFutureFaceEnroll
