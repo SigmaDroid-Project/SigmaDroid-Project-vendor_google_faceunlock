@@ -60,3 +60,9 @@ hal_client_domain(hal_face_default, hal_thermal)
 allow hal_face_default fwk_camera_service:service_manager find;
 
 allow hal_face_default hal_face_debug_service:service_manager add;
+
+allow hal_face_default traced_producer_socket:sock_file write;
+
+allow hal_face_default traced:unix_stream_socket connectto;
+
+allow hal_face_default sysfs:file { getattr open read write };
